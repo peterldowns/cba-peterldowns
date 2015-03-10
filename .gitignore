@@ -1,4 +1,5 @@
 *.DS_Store
 *.pyc
-*.log 
-env
+std*.log 
+env/
+venv/
