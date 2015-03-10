@@ -1,0 +1,21 @@
+<!doctype HTML>
+<html>
+
+<head>
+  {{>head_content}}
+</head>
+
+<body>
+  <div id='page-wrap'>
+    {{>header}}
+    <div id='content'>
+      <div class='archives'>
+        {{#posts}}
+          <p><a href='{{html_path}}'>{{title}}</a></p>
+        {{/posts}}
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
