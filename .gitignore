@@ -1,5 +1,5 @@
 *.DS_Store
 *.pyc
-std*.log 
+std*.log
 env/
 venv/
