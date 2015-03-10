@@ -5,10 +5,10 @@
 default: dev
 
 dev: venv/bin/activate
-	. venv/bin/activate && ./server.py
+	. venv/bin/activate && ./cba_server.py
 
 prod: venv/bin/activate
-	. venv/bin/activate && CBA_PRODUCTION=1 nohup ./server.py script args >stdout.log 2>stderr.log&
+	. venv/bin/activate && CBA_PRODUCTION=1 nohup ./cba_server.py script args >stdout.log 2>stderr.log&
 
 venv venv/bin/activate: requirements.txt clean
 	test -d venv || virtualenv venv --no-site-packages
